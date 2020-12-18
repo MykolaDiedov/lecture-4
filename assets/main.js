@@ -4,11 +4,11 @@ do {
 } while (height < 3 || height > 10);
 var index = 0;
 var out ="";
-while ( index < height ) {
-    for ( var j = 0; j < height - index; j++ ) { 
-        out += " ";}
+while ( index <= height ) {
+    for ( var j = 0; j < height - index; j++ ) {
+        out += "0";}
     for ( var j = 0; j < 2 * index + 1; j++ ) {
-        out += "*";}
+        out += "8";}
     index++;
     out += "\n";}
 alert(out);
